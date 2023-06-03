@@ -1,0 +1,20 @@
+.albumcontainer {
+  background-color: bisque;
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  justify-content: center;
+
+  /* align-content: space-between; */
+
+  padding: 5px;
+  width: auto;
+  height: auto;
+  background: rgb(204, 172, 186);
+  background: linear-gradient(
+    191deg,
+    rgba(204, 172, 186, 1) 26%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  /* background-attachment:scroll; */
+}

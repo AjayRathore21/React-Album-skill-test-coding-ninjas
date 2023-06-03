@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  min-width: 550px;
+  background-color: gray;
+  margin-bottom: 10px;
+
+  border-radius: 10px;
+}
+
+.nav-item {
+  height: 60%;
+  font-size: larger;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 100px;
+  line-height: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 10px;
+}
+
+.nav-item:hover {
+  opacity: 0.74;
+}

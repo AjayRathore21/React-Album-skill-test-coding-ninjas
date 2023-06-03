@@ -1,11 +1,12 @@
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import AlbumContainer from "./AlbumContainer";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<h1>hello there!</h1>}></Route>
+        <Route path="/" element={<AlbumContainer />}></Route>
       </Routes>
     </div>
   );
