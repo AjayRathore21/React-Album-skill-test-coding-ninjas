@@ -12,17 +12,20 @@
 }
 
 .nav-item {
-  height: 60%;
+  height: 28px;
   font-size: larger;
-  font-weight: 500;
+  font-weight: 400;
   text-transform: capitalize;
-  width: 100px;
-  line-height: 50px;
+  min-width: 70px;
+  width: auto;
+  padding:7px;
+  line-height:20px;
   background-color: black;
   color: white;
   text-align: center;
   margin-left: 5px;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 .nav-item:hover {

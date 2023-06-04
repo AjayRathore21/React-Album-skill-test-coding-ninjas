@@ -1,12 +1,41 @@
-.albumcard{
+.albumcard {
+  height: 250px;
+  width: 250px;
+  background-color: cyan;
+  position: relative;
+  box-sizing: border-box;
 
-    height: 250px;
-    width: 250px;
-    background-color: cyan;
+  margin: 8px;
+  padding: 5px;
+}
 
-    margin: 8px;
+.title {
+  min-height: 70px;
+  height: auto;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  font-weight: 500;
 
+  background-color: azure;
+}
 
+.button {
+  height: 40px;
+  display: inline-block;
+  font-size: larger;
+  font-weight: 500;
+  text-transform: capitalize;
+  width: 100px;
+  line-height: 38px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 5px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
 
-
+.button:hover {
+  opacity: 0.74;
 }

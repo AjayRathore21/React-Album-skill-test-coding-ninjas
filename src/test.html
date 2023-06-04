@@ -23,19 +23,19 @@
     //       img.src =  res[2].url
     //     });
 
-        (async () => {
-  const rawResponse = await fetch('https://jsonplaceholder.typicode.com/posts', {
-    method: 'POST',
-    headers: {
-      'Accept': 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify({id: 1, title: 'Textual content'})
-  });
-  const content = await rawResponse.json();
+//         (async () => {
+//   const rawResponse = await fetch('https://jsonplaceholder.typicode.com/posts', {
+//     method: 'POST',
+//     headers: {
+//       'Accept': 'application/json',
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify({id: 1, title: 'Textual content'})
+//   });
+//   const content = await rawResponse.json();
 
-  console.log("post--",content);
-})();
+//   console.log("post--",content);
+// })();
 
         
 

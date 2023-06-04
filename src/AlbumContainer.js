@@ -2,16 +2,15 @@ import React from "react";
 import AlbumCard from "./AlbumCard";
 import "./file css/AlbumContainer.css";
 
-const AlbumContainer = () => {
+const AlbumContainer = (props) => {
+  const albumarr = props.album;
+
+  console.log("inside alunmcontainer", albumarr);
   return (
     <div className="albumcontainer">
-      <AlbumCard />
-      <AlbumCard />
-      <AlbumCard />
-      <AlbumCard />
-      <AlbumCard />
-      <AlbumCard /> <AlbumCard /> <AlbumCard />
-      <AlbumCard /> <AlbumCard /> <AlbumCard /> <AlbumCard /> <AlbumCard />
+      {albumarr.map((album) => {
+        return <AlbumCard album={album} />;
+      })}
     </div>
   );
 };
