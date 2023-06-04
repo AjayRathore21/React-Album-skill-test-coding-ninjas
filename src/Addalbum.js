@@ -1,7 +1,7 @@
 import React from "react";
 import "./file css/Addalbum.css";
 import { useRef } from "react";
-import { json, useNavigate } from "react-router-dom";
+
 
 const Addalbum = (props) => {
   const userId = useRef();
@@ -10,7 +10,7 @@ const Addalbum = (props) => {
   var arr = props.albumarr;
   const setArr = props.setablum;
 
-  //   const navigate = useNavigate();
+    // const navigate = useNavigate();
 
   function handleSubmit() {
     fetch("https://jsonplaceholder.typicode.com/albums", {
@@ -25,12 +25,14 @@ const Addalbum = (props) => {
     })
       .then((response) => response.json())
       .then((json) => {
-        console.log("inside addAlbum", json);
+        // console.log("inside addAlbum", json);
         arr.unshift(json);
         setArr(arr);
       });
 
-    //   navigate('/')
+      
+
+      
   }
 
   return (

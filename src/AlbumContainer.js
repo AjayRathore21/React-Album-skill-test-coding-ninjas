@@ -9,7 +9,13 @@ const AlbumContainer = (props) => {
   return (
     <div className="albumcontainer">
       {albumarr.map((album) => {
-        return <AlbumCard album={album} />;
+        return (
+          <AlbumCard
+            album={album}
+            albumarr={albumarr}
+            setablum={props.setablum}
+          />
+        );
       })}
     </div>
   );
