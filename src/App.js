@@ -8,6 +8,8 @@ import { useEffect, useState } from "react";
 function App() {
   const [albumarr, setablum] = useState([]);
 
+
+// fetching the data fron the server through get request!
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/albums")
       .then((response) => response.json())
@@ -19,6 +21,8 @@ function App() {
 
   return (
     <div className="App">
+
+      {/* applied various Routers in the webapp! */}
       <Routes>
         <Route
           path="/"

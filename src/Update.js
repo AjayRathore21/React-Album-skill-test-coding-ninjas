@@ -5,22 +5,17 @@ import { useParams } from "react-router-dom";
 
 const Update = (props) => {
   const userIdRef = useRef();
-  const titleRef = useRef();
+  const titleRef = useRef();   // accessing the form data through ref
 
-  const { id } = useParams();
-  // console.log( "params",id)
-
-  //   console.log(userId, title, "insuserIde update");
+  const { id } = useParams(); // getting object id which need to be update
 
   var arr = props.albumarr;
-  //   console.log(arr);
 
   const setArr = props.setablum;
 
   var updateObj = useRef();
 
-  updateObj = arr.filter((val) => val.id == id);
-  //   console.log(updateObj[0], "update object!");
+  updateObj = arr.filter((val) => val.id == id); // used to show userId and title on the form title
 
   const { userId, title } = updateObj[0];
 
@@ -40,7 +35,7 @@ const Update = (props) => {
         console.log("inside Update", json);
         arr.map((val) => {
           if (val.id == id) {
-            val.title = json.title;
+            val.title = json.title;    // updating the object by getting the response from the web
             val.userId = json.userId;
 
             return;
@@ -49,7 +44,7 @@ const Update = (props) => {
         setArr(arr);
       });
 
-    //   navigate('/')
+    
   }
 
   return (

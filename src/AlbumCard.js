@@ -9,6 +9,8 @@ const AlbumCard = (props) => {
   const albumarr = props.albumarr;
 
   function handleDelete() {
+
+    //deleting the data on server using id
     fetch(`https://jsonplaceholder.typicode.com/albums/${album.id}`, {
       method: "DELETE",
     })
@@ -20,8 +22,6 @@ const AlbumCard = (props) => {
 
       navigate('/')
   }
-
-  // console.log("inside albumcard", album);
 
   return (
     <div className="albumcard">
