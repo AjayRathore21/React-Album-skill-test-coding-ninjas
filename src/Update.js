@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 
 const Update = (props) => {
   const userIdRef = useRef();
-  const titleRef = useRef();   // accessing the form data through ref
+  const titleRef = useRef(); // accessing the form data through ref
 
   const { id } = useParams(); // getting object id which need to be update
 
@@ -35,7 +35,7 @@ const Update = (props) => {
         console.log("inside Update", json);
         arr.map((val) => {
           if (val.id == id) {
-            val.title = json.title;    // updating the object by getting the response from the web
+            val.title = json.title; // updating the object by getting the response from the web
             val.userId = json.userId;
 
             return;
@@ -43,8 +43,6 @@ const Update = (props) => {
         });
         setArr(arr);
       });
-
-    
   }
 
   return (

@@ -10,7 +10,6 @@ const AlbumContainer = (props) => {
     <div className="albumcontainer">
       {albumarr.map((album) => {
         return (
-
           // rendering all albumcard on the app
           <AlbumCard
             album={album}

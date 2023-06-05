@@ -2,18 +2,16 @@ import React from "react";
 import "./file css/Addalbum.css";
 import { useRef } from "react";
 
-
 const Addalbum = (props) => {
   const userId = useRef();
   const title = useRef();
 
-//   taking data from the form using ref variable
+  //   taking data from the form using ref variable
 
   var arr = props.albumarr;
   const setArr = props.setablum;
 
   function handleSubmit() {
-
     // creating album on the server!
     fetch("https://jsonplaceholder.typicode.com/albums", {
       method: "POST",
@@ -31,10 +29,6 @@ const Addalbum = (props) => {
         arr.unshift(json);
         setArr(arr);
       });
-
-      
-
-      
   }
 
   return (

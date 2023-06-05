@@ -3,13 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 import "./file css/AlbumCard.css";
 
 const AlbumCard = (props) => {
-
-  const navigate = useNavigate()
+  const navigate = useNavigate();
   const album = props.album;
   const albumarr = props.albumarr;
 
   function handleDelete() {
-
     //deleting the data on server using id
     fetch(`https://jsonplaceholder.typicode.com/albums/${album.id}`, {
       method: "DELETE",
@@ -17,10 +15,10 @@ const AlbumCard = (props) => {
       .then((res) => res.json())
       .then((data) => console.log(data, "deleted data!"));
 
-      const filteredArr = albumarr.filter((val)=>val.id!==album.id);
-      props.setablum(filteredArr);
+    const filteredArr = albumarr.filter((val) => val.id !== album.id);
+    props.setablum(filteredArr);
 
-      navigate('/')
+    navigate("/");
   }
 
   return (
